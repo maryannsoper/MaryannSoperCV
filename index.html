@@ -159,7 +159,57 @@
   border: 1px solid var(--border);
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  margin-top: 1rem;
+}
 
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.feature-role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  margin-bottom: 1rem;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+}
+
+.feature-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.feature-link:hover {
+  background: #1e4f80;
+}
   </style>
 </head>
 
@@ -326,28 +376,35 @@
         </article>
       </section>
 
-      <section class="section">
-        <h3>Featured Project</h3>
+     <section class="section">
+  <h3>Featured Project</h3>
 
-        <article class="item">
-          <div class="item-header">
-            <div class="item-title">GooseyGoo – Digital Platform</div>
-            <div class="item-meta">Designer · Developer · Content Strategist</div>
-          </div>
-                    <ul>
-            <li>Designed, built, and launched a full website showcasing full range of digital services.</li>
-            <li>Created all content, establishing a clear brand voice and user‑centred information architecture.</li>
-            <li>Applied UX principles, accessibility standards, and responsive design.</li>
-            <li>Manage hosting, apis, pluggins and site health.</li>
-            <span class="chip"><a href="https://www.gooseygoo.co.uk" target="_blank">Visit GooseyGoo</a></span>
-          </ul>
-          <img 
+  <div class="feature-card">
+    <h4 class="feature-title">GooseyGoo – Digital Platform</h4>
+    <p class="feature-role">Designer · Developer · Content Strategist</p>
+
+    <img 
       src="gooseygoo-preview.jpg" 
       alt="GooseyGoo mobile screenshot" 
-      class="gooseygoo-img"
+      class="feature-image"
     />
-        </article>
-      </section>
+
+    <ul class="feature-list">
+      <li>Designed, built, and launched a full website showcasing a full range of digital services.</li>
+      <li>Created all content, establishing a clear brand voice and user‑centred information architecture.</li>
+      <li>Applied UX principles, accessibility standards, and responsive design.</li>
+      <li>Manage hosting, APIs, plugins and site health.</li>
+    </ul>
+
+    <a 
+      href="https://www.gooseygoo.co.uk" 
+      target="_blank" 
+      class="feature-link"
+    >
+      Visit GooseyGoo
+    </a>
+  </div>
+</section>
 
       <section class="section">
         <h3>Governance Roles</h3>
