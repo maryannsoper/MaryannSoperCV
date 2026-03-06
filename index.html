@@ -210,6 +210,26 @@
 .feature-link:hover {
   background: #1e4f80;
 }
+    .device-frame {
+  width: 260px; /* adjust this to make the phone bigger or smaller */
+  padding: 18px;
+  border-radius: 32px;
+  background: #000;
+  border: 2px solid #222;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-screen {
+  width: 100%;
+  height: auto;        /* prevents vertical stretching */
+  object-fit: contain; /* keeps proportions */
+  border-radius: 20px;
+  display: block;
+}
   </style>
 </head>
 
@@ -383,11 +403,13 @@
     <h4 class="feature-title">GooseyGoo – Digital Platform</h4>
     <p class="feature-role">Designer · Developer · Content Strategist</p>
 
-    <img 
-      src="gooseygoo-preview.jpg" 
-      alt="GooseyGoo mobile screenshot" 
-      class="feature-image"
-    />
+   <div class="device-frame">
+  <img 
+    src="Gooseygoo-preview.jpeg" 
+    alt="GooseyGoo mobile screenshot" 
+    class="device-screen"
+  />
+</div>
 
     <ul class="feature-list">
       <li>Designed, built, and launched a full website showcasing a full range of digital services.</li>
