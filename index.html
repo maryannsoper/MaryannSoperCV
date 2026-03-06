@@ -210,24 +210,25 @@
 .feature-link:hover {
   background: #1e4f80;
 }
-    .device-frame {
-  width: 260px; /* adjust this to make the phone bigger or smaller */
-  padding: 18px;
-  border-radius: 32px;
+   .device-frame {
+  width: 240px;              /* slightly smaller phone */
+  padding: 10px;             /* thinner bezel */
+  border-radius: 24px;       /* slimmer rounded corners */
   background: #000;
-  border: 2px solid #222;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 1px solid #333;    /* thinner border */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   margin: 1rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;     /* remove link underline */
 }
 
 .device-screen {
   width: 100%;
-  height: auto;        /* prevents vertical stretching */
-  object-fit: contain; /* keeps proportions */
-  border-radius: 10px;
+  height: auto;              /* prevents vertical stretching */
+  object-fit: contain;       /* keeps proportions */
+  border-radius: 16px;
   display: block;
 }
   </style>
@@ -404,11 +405,13 @@
     <p class="feature-role">Founder, Designer · Developer · Content Strategist</p>
 
    <div class="device-frame">
+<a href="https://www.gooseygoo.co.uk" target="_blank" class="device-frame">
   <img 
     src="gooseygoo-preview.jpg" 
     alt="GooseyGoo mobile screenshot" 
     class="device-screen"
   />
+</a>
 </div>
 
     <ul class="feature-list">
@@ -418,14 +421,7 @@
       <li>Manage hosting, APIs, plugins and site health.</li>
     </ul>
 
-    <a 
-      href="https://www.gooseygoo.co.uk" 
-      target="_blank" 
-      class="feature-link"
-    >
-      Visit GooseyGoo
-    </a>
-  </div>
+    </div>
 </section>
 
       <section class="section">
