@@ -47,6 +47,12 @@
       justify-content: space-between;
       gap: 1.5rem;
     }
+   
+    .header-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .header-photo img {
       width: 120px;
